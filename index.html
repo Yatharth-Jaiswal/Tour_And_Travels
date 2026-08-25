@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel_X — Luxury Journeys & Curated Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="destination.css">
-    <title>Travel_X</title>
-</head>
 <body>
 
-    <header id="header">
-        <a href="#" class="logo"> Travel_X </a>
+    <header id="header" class="site-header">
+        <div class="nav-container">
+            <a href="Tour&Travel.html" class="logo">Travel_X</a>
 
-        <div class="social-media">
-            <a href="#"> <i class='bx bxl-twitter'></i> </a>
-            <a href="#"> <i class='bx bxl-facebook' ></i> </a>
-            <a href="#"> <i class='bx bxl-telegram' ></i> </a>
-            <a href="#"> <i class='bx bxl-instagram-alt' ></i> </a>
+            <nav class="navbar">
+                <a href="#why-us">Why Travel_X?</a>
+                <a href="Destination/Destinations.html">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="FAQ_s/FAQ_Page.html">Support</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="Another_Login_Page/Login_&_Register_Page.html" class="nav-login">Login</a>
+                <a href="#footer" class="nav-btn">Contact Us</a>
+            </div>
         </div>
-
-        <nav class="navbar">
-            <a href="destination.html" target="_blank">
-                Destinations 
-            </a>
-            <a href="#"> Bookings </a>
-            <a href="https://yatharth-jaiswal.github.io/Login-Registration-Form" target="_blank">
-                Login 
-            </a>
-            <a href="file:///C:/Users/yatha/Documents/My%20Work/Tour_&_Travels/FAQ_s/FAQ_Page.html"> FAQ's </a>
-        </nav>
     </header>
 
     <div class="banner">
@@ -108,49 +104,120 @@
             <span class="prev-btn"> <i class='bx bx-chevron-left'></i> </span>
             <span class="next-btn"> <i class='bx bx-chevron-right' ></i> </span>
         </div>
+
+        <!-- Floating Scroll Cue -->
+        <a href="#why-us" class="hero-scroll-cue" id="heroScrollCue" aria-label="Scroll to explore">
+            <span class="mouse-icon">
+                <span class="wheel-dot"></span>
+            </span>
+            <span class="cue-label">SCROLL TO DISCOVER</span>
+            <i class='bx bx-chevron-down cue-arrow'></i>
+        </a>
     </div>
 
-    <div class="travel">
-        <div class="container">
-            <ul>
-                <li>
-                    <div class="img-section">
-                        <img src="planning.png">
-                    </div>
-                    <div class="content">
-                        <h4> Seamless Travel Planning </h4>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet officiis neque, repellendus
-                            labore voluptatibus quos temporibus, saepe atque dolore quasi corporis odit quia numquam explicabo. 
-                        </p>
-                    </div>
-                </li>
+    <section class="travel" id="why-us">
+        <div class="container-1340">
+            <div class="section-header">
+                <span class="section-badge">Why Travel_X?</span>
+                <h2>Crafting Exceptional Journeys Worldwide</h2>
+                <p class="section-subtitle">
+                    We blend personalized curation, verified safety standards, and 24/7 dedicated concierge support to make every voyage effortless.
+                </p>
+            </div>
 
-                <li>
-                    <div class="img-section">
-                        <img src="trust.png">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="icon-glow"></div>
+                        <img src="planning.png" alt="Seamless Travel Planning" class="feature-icon">
                     </div>
-                    <div class="content">
-                        <h4> Reliable & Trustworthy </h4>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet officiis neque, repellendus
-                            labore voluptatibus quos temporibus, saepe atque dolore quasi corporis odit quia numquam explicabo. 
-                        </p>
-                    </div>
-                </li>
+                    <span class="feature-badge">Smart Itineraries</span>
+                    <h3 class="feature-title">Seamless Travel Planning</h3>
+                    <p class="feature-desc">
+                        Every itinerary is personalized with live flight tracking, curated stays, and effortless real-time booking updates.
+                    </p>
+                    <ul class="feature-checklist">
+                        <li><i class='bx bx-check-circle'></i> Real-time Itinerary Sync</li>
+                        <li><i class='bx bx-check-circle'></i> Automated Trip Alerts</li>
+                        <li><i class='bx bx-check-circle'></i> Transparent Direct Pricing</li>
+                    </ul>
+                </div>
 
-                <li>
-                    <div class="img-section">
-                        <img src="map.png">
+                <!-- Feature 2 (Highlighted) -->
+                <div class="feature-card highlighted">
+                    <div class="card-ribbon">Most Valued</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="icon-glow"></div>
+                        <img src="trust.png" alt="Reliable & Trustworthy" class="feature-icon">
                     </div>
-                    <div class="content">
-                        <h4> Toilored Experience </h4>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet officiis neque, repellendus
-                            labore voluptatibus quos temporibus, saepe atque dolore quasi corporis odit quia numquam explicabo. 
-                        </p>
+                    <span class="feature-badge gold">Certified Safety</span>
+                    <h3 class="feature-title">Reliable & Trustworthy</h3>
+                    <p class="feature-desc">
+                        100% verified premium operators, comprehensive traveler insurance, and 24/7 dedicated multi-lingual emergency concierge.
+                    </p>
+                    <ul class="feature-checklist">
+                        <li><i class='bx bx-check-circle'></i> 24/7 Emergency Concierge</li>
+                        <li><i class='bx bx-check-circle'></i> Comprehensive Travel Protection</li>
+                        <li><i class='bx bx-check-circle'></i> Verified 5-Star Accommodations</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="icon-glow"></div>
+                        <img src="map.png" alt="Tailored Experiences" class="feature-icon">
                     </div>
-                </li>
-            </ul>
+                    <span class="feature-badge">Bespoke Journeys</span>
+                    <h3 class="feature-title">Tailored Experiences</h3>
+                    <p class="feature-desc">
+                        Handpicked luxury stays, private guided excursions, and exclusive VIP access to hidden gems off the beaten tourist paths.
+                    </p>
+                    <ul class="feature-checklist">
+                        <li><i class='bx bx-check-circle'></i> Boutique Luxury Stays</li>
+                        <li><i class='bx bx-check-circle'></i> Private Local Guides</li>
+                        <li><i class='bx bx-check-circle'></i> Exclusive VIP Access</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interactive Live Milestone Counter Strip -->
+            <div class="stats-counter-strip scroll-reveal">
+                <div class="stat-item">
+                    <div class="stat-number-wrap">
+                        <span class="counter" data-target="25000" data-format="comma">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Happy Explorers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number-wrap">
+                        <span class="counter" data-target="150" data-format="integer">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Curated Destinations</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number-wrap">
+                        <span class="counter" data-target="4.9" data-format="decimal" data-decimals="1">0</span>
+                        <span class="stat-suffix">/5.0</span>
+                    </div>
+                    <span class="stat-label">Customer Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number-wrap">
+                        <span class="counter" data-target="99.8" data-format="decimal" data-decimals="1">0</span>
+                        <span class="stat-suffix">%</span>
+                    </div>
+                    <span class="stat-label">Trip Satisfaction</span>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="destination">
         <div class="container">
@@ -159,13 +226,11 @@
                 <h3>City & Nature</h3>
             </div>
             <div class="info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eveniet tenetur, adipisci quidem quis dolor
-                    expedita consectetur culpa, eum minus eius saepe odio dolore modi vero nesciunt quas dolores aperiam.
+                <p> Immerse yourself in the world's most captivating blend of thriving modern skylines and untouched natural sanctuaries. Discover handpicked escapes crafted for the modern explorer.
                 </p>
                 <div class="btn">
-                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                   target="_blank"> 
-                    Exlpore More
+                <a href="Destination/Destinations.html"> 
+                    Explore More
                 </a>
                 </div>
             </div>
@@ -178,49 +243,49 @@
             <ul>
                 <li>
                     <div class="img-section">
-                        <img src="destinations-1.jpg">
+                        <img src="destinations-1.jpg" alt="Destination photo 1">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destinations-2.jpg">
+                        <img src="destinations-2.jpg" alt="Destination photo 2">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destinations-3.jpg">
+                        <img src="destinations-3.jpg" alt="Destination photo 3">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destinations-4.jpg">
+                        <img src="destinations-4.jpg" alt="Destination photo 4">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destination-5.jpg">
+                        <img src="destination-5.jpg" alt="Destination photo 5">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destination-6.jpg">
+                        <img src="destination-6.jpg" alt="Destination photo 6">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destination-7.jpg">
+                        <img src="destination-7.jpg" alt="Destination photo 7">
                     </div>
                 </li>
 
                 <li>
                     <div class="img-section">
-                        <img src="destination-8.jpg">
+                        <img src="destination-8.jpg" alt="Destination photo 8">
                     </div>
                 </li>
             </ul>
@@ -228,7 +293,7 @@
         </div>
     </div>
 
-    <div class="features">
+    <div class="features" id="packages">
         <div class="container-1440">
             <h2> Featured Offer </h2>
             <ul>
@@ -305,7 +370,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="img-section">
-                                <img src="GULMARG.jpg">
+                                <img src="GULMARG.jpg" alt="Gulmarg">
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -313,9 +378,8 @@
                                 <h4>Gulmarg</h4>
                                 <span>Located in : Jammu and Kashmir</span>
                                 <p> Known For : Gulmarg Gondola, Alpather Lake, Apharwat Peak </p>
-                                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                                   target="_blank"> 
-                                   Exlpore More
+                                <a href="Destination/Destinations.html"> 
+                                   Explore More
                                 </a>
                             </div>
                         </div>
@@ -326,7 +390,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="img-section">
-                                <img src="MUNNAR.jpg">
+                                <img src="MUNNAR.jpg" alt="Munnar">
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -334,9 +398,8 @@
                                 <h4>Munnar</h4>
                                 <span>Located in : Kerala</span>
                                 <p>Known For : Mattupetty Dam, Kolukkumalai Tea Estate, Rose Garden Munnar</p>
-                                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                                   target="_blank"> 
-                                   Exlpore More
+                                <a href="Destination/Destinations.html"> 
+                                   Explore More
                                 </a>
                             </div>
                         </div>
@@ -347,7 +410,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="img-section">
-                                <img src="MANALI.jpg">
+                                <img src="MANALI.jpg" alt="Manali">
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -355,9 +418,8 @@
                                 <h4>Manali</h4>
                                 <span>Located in : Himachal Pradesh</span>
                                 <p>Known For : Solang Valley, Hadimba Devi Temple, Manali Mall Road</p>
-                                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                                   target="_blank"> 
-                                   Exlpore More
+                                <a href="Destination/Destinations.html"> 
+                                   Explore More
                                 </a>
                             </div>
                         </div>
@@ -368,7 +430,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="img-section">
-                                <img src="SRINAGAR.jpg">
+                                <img src="SRINAGAR.jpg" alt="Srinagar">
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -376,9 +438,8 @@
                                 <h4>Srinagar</h4>
                                 <span>Located in : Jammu and Kashmir</span>
                                 <p>Known For : Dal Lake, Indira Gandhi, Memorial Tulip Garden, Shalimar Bagh Mughal Garden</p>
-                                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                                   target="_blank"> 
-                                   Exlpore More
+                                <a href="Destination/Destinations.html"> 
+                                   Explore More
                                 </a>
                             </div>
                         </div>
@@ -389,7 +450,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <div class="img-section">
-                                <img src="DARJEELING.jpg">
+                                <img src="DARJEELING.jpg" alt="Darjeeling">
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -397,9 +458,8 @@
                                 <h4>Darjeeling</h4>
                                 <span>Located in : West Bengal</span>
                                 <p>Known For : Darjeeling Himalayan Railway, Darjeeling Peace Pagoda, Himalayan Mountaineering Institute</p>
-                                <a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html" 
-                                   target="_blank"> 
-                                   Exlpore More
+                                <a href="Destination/Destinations.html"> 
+                                   Explore More
                                 </a>
                             </div>
                         </div>
@@ -407,232 +467,427 @@
                 </li>
 
             </ul>
-            <a class="btn-secondary" href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/Destination/Destinations.html">
+            <a class="btn-secondary" href="Destination/Destinations.html">
                 VIEW MORE 
             </a>
         </div>
     </div>
 
 
-    <div class="feedback-section">
-        <div class="container">
-            <h4 class="label"> Adventure's Voices </h4>
-            <h2 class="heading"> Adventure's Voices </h2>
-            <p> Real stories from our send tour community </p>
-        </div>
-
-        <div class="profiles">
-            <ul>
-                <li>
-                    <div class="img-section">
-                        <img src="photo1.jpg">
+    <section class="feedback-section" id="voices">
+        <div class="container-1340">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>Adventure’s Voices & Real Stories</h2>
+                <p class="section-subtitle">
+                    Authentic impressions and unforgettable memories shared by passionate travelers from around the world.
+                </p>
+                <div class="rating-summary-pill">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
                     </div>
-                    <div class="details">
-                        <ol>
-                            <li> Marvin Davin </li>
-                            <li> Traveler </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img src="photo2.jpg">
-                    </div>
-                    <div class="details">
-                        <ol>
-                            <li> Emily Blunt </li>
-                            <li> Traveler </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img src="photo3.jpg">
-                    </div>
-                    <div class="details">
-                        <ol>
-                            <li> Mark Toddler </li>
-                            <li> Photographer </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img src="photo4.jpg">
-                    </div>
-                    <div class="details">
-                        <ol>
-                            <li> Brat Pit </li>
-                            <li> Traveler </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img src="photo5.jpg">
-                    </div>
-                    <div class="details">
-                        <ol>
-                            <li> Anya Tailor </li>
-                            <li> Photographer </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img src="photo6.jpg">
-                    </div>
-                    <div class="details">
-                        <ol>
-                            <li> Kate Winslet </li>
-                            <li> Traveler </li>
-                        </ol>
-                    </div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius cupiditate explicabo, magni quia
-                        reprehenderit ipsa nobis! Nobis, similique reiciendis quae, nisi maiores et doloremque unde magnam. 
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="research">
-        <div class="container">
-
-            <h1> Latest Article </h1>
-
-            <ul>
-                <li>
-                    <div class="img-section">
-                        <img class="image" src="family.jpg">
-                        <div class="content">
-                            <h3> Traveling With Kids: </h3>
-                            <p> Tips Free Stress-Free Family Advantures </p>
-                        </div>
-                    </div>  
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img class="image" src="food-article.jpg">
-                        <div class="content">
-                            <h3> Culinary Adventure: </h3>
-                            <p> Explore World Cuisines On Your Travels </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img class="image" src="budget-travel.jpg">
-                        <div class="content">
-                            <h3> Traveling On Budget: </h3>
-                            <p> Tips For Affordable Advne </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="img-section">
-                        <img class="image" src="tips.jpg">
-                        <div class="content">
-                            <h3> Traveling With Kids: </h3>
-                            <p> Tips Free Stress-Free Family Advantures </p>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="sign-up-section">
-                <h3> Join Our Family </h3>
-                <p> Stay in the know about upcoming events, special offers, and New destination news. </p>
-
-                <div class="email">
-                    <input type="text" placeholder="Email Address" name="uname" required>
-                    <a class="btn--primary" href=""> SUBMIT </a>
+                    <span><strong>4.9 / 5.0</strong> Rating based on 2,400+ Verified Reviews</span>
                 </div>
             </div>
 
-            <div class="five-column-menu-section">
-                <div class="menu">
-                    <h4 class="accordion"> Shop </h4>
-                    <ul>
-                        <li><a href=""> Tent </a></li>
-                        <li><a href=""> Camp rug </a></li>
-                        <li><a href=""> Firewood </a></li>
-                        <li><a href=""> Duct tape </a></li>
-                        <li><a href=""> Cots </a></li>
-                    </ul>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">Gulmarg Snow Expedition</span>
+                    </div>
+                    <p class="review-text">
+                        "The custom itinerary for our Kashmir winter trip was flawless. From heated mountain dome stays to private backcountry ski guides, Travel_X handled every detail effortlessly."
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo1.jpg" alt="Marvin Davin" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Marvin Davin</h4>
+                            <span class="traveler-role">Verified Explorer • Solo Traveler</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="menu">
-                    <h4 class="accordion"> Story </h4>
-                    <ul>
-                        <li><a href=""> Journey </a></li>
-                        <li><a href=""> Services </a></li>
-                        <li><a href=""> About </a></li>
-                    </ul>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">Kerala Houseboat Tour</span>
+                    </div>
+                    <p class="review-text">
+                        "Traveling solo as a woman felt completely safe and empowering with Travel_X's 24/7 concierge. The private houseboat in Alleppey and spice plantation tour were pure paradise."
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo2.jpg" alt="Emily Blunt" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Emily Blunt</h4>
+                            <span class="traveler-role">Verified Explorer • Architect</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="menu">
-                    <h4 class="accordion"> Contact </h4>
-                    <ul>
-                        <li><a href=""> Get in Touch </a></li>
-                        <li><a href=""> Locations </a></li>
-                        <li><a href=""> Trade </a></li>
-                    </ul>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">Manali Alpine Passes</span>
+                    </div>
+                    <p class="review-text">
+                        "As a landscape photographer, timing the golden hour across high passes is everything. The guides knew the secret vantage points far away from tourist crowds. Exceptional!"
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo3.jpg" alt="Mark Toddler" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Mark Toddler</h4>
+                            <span class="traveler-role">Verified Explorer • Photographer</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="menu">
-                    <h4 class="accordion"> More </h4>
-                    <ul>
-                        <li><a href="file:///C:/Users/yatha/OneDrive/Documents/Tour_&_Travels/FAQ's/FAQ_Page.html" target="_blank"> FAQs </a></li>
-                        <li><a href=""> Cities </a></li>
-                        <li><a href=""> Forest </a></li>
-                        <li><a href=""> Bookings </a></li>
-                    </ul>
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">Jaipur Royal Heritage</span>
+                    </div>
+                    <p class="review-text">
+                        "Five-star hospitality from pickup to departure. The private palace dinner in Jaipur and the desert safari under starry skies were unforgettable highlights for our family."
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo4.jpg" alt="Braden Pitt" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Braden Pitt</h4>
+                            <span class="traveler-role">Verified Explorer • Luxury Vacationer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">African Safari Camp</span>
+                    </div>
+                    <p class="review-text">
+                        "Eco-conscious luxury at its finest. Witnessing the wildlife migration with master trackers while supporting local conservation initiatives made this trip deeply meaningful."
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo5.jpg" alt="Anya Taylor" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Anya Taylor</h4>
+                            <span class="traveler-role">Verified Explorer • Wildlife Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-right'></i></div>
+                    <div class="card-top">
+                        <div class="star-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <span class="trip-tag">Swiss Alps & Lakes</span>
+                    </div>
+                    <p class="review-text">
+                        "Coordinating a 3-generation family trip of 8 people usually brings chaos, but Travel_X made it seamless. Every transfer, train pass, and child-friendly excursion was spot on."
+                    </p>
+                    <div class="traveler-profile">
+                        <div class="avatar-wrap">
+                            <img src="photo6.jpg" alt="Kate Winslet" class="traveler-avatar">
+                            <span class="verified-check"><i class='bx bx-check'></i></span>
+                        </div>
+                        <div class="traveler-info">
+                            <h4 class="traveler-name">Kate Winslet</h4>
+                            <span class="traveler-role">Verified Explorer • Family Group Leader</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="social-media-section">
-            <div class="email-id">
-                <a> © 2025 Travel_X Family, All Rights Reserved </a>
+    <section class="research" id="journal">
+        <div class="container-1340">
+            <div class="section-header">
+                <span class="section-badge">From The Journal</span>
+                <h2>Latest Stories & Travel Guides</h2>
+                <p class="section-subtitle">
+                    Insider advice, destination deep-dives, and expert tips to inspire your upcoming expeditions.
+                </p>
             </div>
 
-            <div class="apps">
-                <ul>
-                    <li> <img src="facebook.svg"> </li>
-                    <li> <img src="pintrest.svg"> </li>
-                    <li> <img src="tik tok.svg"> </li>
-                    <li> <img src="instagram.svg"> </li>
-                </ul>
+            <div class="article-grid">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-img-wrap">
+                        <img src="family.jpg" alt="Family traveling together" class="article-img">
+                        <span class="article-category">Family Travel</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class='bx bx-calendar'></i> Jun 12, 2025</span>
+                            <span><i class='bx bx-time-five'></i> 5 min read</span>
+                        </div>
+                        <h3 class="article-title">Traveling With Kids: A Guide To Stress-Free Family Adventures</h3>
+                        <p class="article-excerpt">
+                            Discover practical packing checklists, child-friendly transit hacks, and itinerary pacing for effortless family memories.
+                        </p>
+                        <div class="article-footer">
+                            <div class="author-info">
+                                <img src="photo5.jpg" alt="Anya Taylor" class="author-avatar">
+                                <span class="author-name">Anya Taylor</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-img-wrap">
+                        <img src="food-article.jpg" alt="Culinary experiences" class="article-img">
+                        <span class="article-category">Culinary Journeys</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class='bx bx-calendar'></i> Jun 08, 2025</span>
+                            <span><i class='bx bx-time-five'></i> 7 min read</span>
+                        </div>
+                        <h3 class="article-title">Culinary Adventures: Explore Authentic Global Cuisines</h3>
+                        <p class="article-excerpt">
+                            From bustling night markets in Southeast Asia to Tuscan vineyard tastings, immerse your senses in world gastronomies.
+                        </p>
+                        <div class="article-footer">
+                            <div class="author-info">
+                                <img src="photo3.jpg" alt="Mark Toddler" class="author-avatar">
+                                <span class="author-name">Mark Toddler</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <div class="article-img-wrap">
+                        <img src="budget-travel.jpg" alt="Budget friendly travel tips" class="article-img">
+                        <span class="article-category">Smart Travel</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class='bx bx-calendar'></i> May 29, 2025</span>
+                            <span><i class='bx bx-time-five'></i> 4 min read</span>
+                        </div>
+                        <h3 class="article-title">Traveling On A Budget: Secrets To Affordable Luxury</h3>
+                        <p class="article-excerpt">
+                            How to unlock secret shoulder-season flight discounts, boutique stays, and VIP perks without overspending.
+                        </p>
+                        <div class="article-footer">
+                            <div class="author-info">
+                                <img src="photo2.jpg" alt="Emily Blunt" class="author-avatar">
+                                <span class="author-name">Emily Blunt</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card">
+                    <div class="article-img-wrap">
+                        <img src="tips.jpg" alt="Solo trekking advice" class="article-img">
+                        <span class="article-category">Solo Trekking</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class='bx bx-calendar'></i> May 20, 2025</span>
+                            <span><i class='bx bx-time-five'></i> 6 min read</span>
+                        </div>
+                        <h3 class="article-title">Essential Solo Trekking Tips: Packing, Navigation & Safety</h3>
+                        <p class="article-excerpt">
+                            Master high-altitude trail preparation, packing ultralight gear, and navigation techniques for remote alpine paths.
+                        </p>
+                        <div class="article-footer">
+                            <div class="author-info">
+                                <img src="photo1.jpg" alt="Marvin Davin" class="author-avatar">
+                                <span class="author-name">Marvin Davin</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="journal-cta">
+                <a href="FAQ_s/FAQ_Page.html" class="journal-btn">
+                    <span>Explore All Stories</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="site-footer">
+        <div class="footer-top-accent"></div>
+
+        <div class="footer-container">
+            <!-- Top Section: Brand Story & Newsletter -->
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <a href="Tour&Travel.html" class="footer-logo">Travel_X<span class="logo-dot">.</span></a>
+                    <p class="brand-desc">
+                        Your premier gateway to bespoke journeys, luxury stays, and curated world adventures. Crafted for seamless discovery and unforgettable memories.
+                    </p>
+                    <div class="trust-badges">
+                        <span class="trust-pill"><i class='bx bxs-star'></i> 4.9/5 Rated</span>
+                        <span class="trust-pill"><i class='bx bxs-shield-check'></i> 100% Protected</span>
+                        <span class="trust-pill"><i class='bx bx-support'></i> 24/7 Concierge</span>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter-col">
+                    <div class="newsletter-card">
+                        <div class="newsletter-header">
+                            <span class="newsletter-tag">Newsletter</span>
+                            <h3>Join Our Family</h3>
+                            <p>Receive handpicked travel discounts, secret getaway drops, and seasonal itineraries.</p>
+                        </div>
+
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Travel_X!');">
+                            <div class="input-wrapper">
+                                <i class='bx bx-envelope mail-icon'></i>
+                                <input type="email" placeholder="Enter your email address..." required>
+                            </div>
+                            <button type="submit" class="newsletter-btn">
+                                <span>Subscribe</span>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section: Categorized Links -->
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4 class="accordion">Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="Destination/Destinations.html">Gulmarg, Kashmir</a></li>
+                        <li><a href="Destination/Destinations.html">Munnar, Kerala</a></li>
+                        <li><a href="Destination/Destinations.html">Manali, Himachal</a></li>
+                        <li><a href="Destination/Destinations.html">Jaipur, Rajasthan</a></li>
+                        <li><a href="Destination/Destinations.html">Srinagar, Dal Lake</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="accordion">Experiences</h4>
+                    <ul class="footer-links">
+                        <li><a href="#packages">Honeymoon Packages</a></li>
+                        <li><a href="#packages">Mountain Trekking</a></li>
+                        <li><a href="#packages">Desert Safaris</a></li>
+                        <li><a href="#packages">Beachfront Resorts</a></li>
+                        <li><a href="#packages">Cultural Heritage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="accordion">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#why-us">About Us</a></li>
+                        <li><a href="#why-us">Our Story</a></li>
+                        <li><a href="#why-us">Careers</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Press & Media</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="accordion">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="FAQ_s/FAQ_Page.html">Help Center & FAQ</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Booking Policy</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Cancellation & Refunds</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Contact Concierge</a></li>
+                        <li><a href="FAQ_s/FAQ_Page.html">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Copyright & Social Apps & Back-to-Top -->
+            <div class="footer-bottom-bar">
+                <div class="copyright">
+                    <p>© 2025 Travel_X Inc. All rights reserved. Designed for modern explorers.</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="social-icon" aria-label="Pinterest"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+                </div>
+
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <span>Top</span>
+                    <i class='bx bx-up-arrow-alt'></i>
+                </button>
             </div>
         </div>
     </footer>

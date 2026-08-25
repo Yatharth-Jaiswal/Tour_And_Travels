@@ -140,12 +140,10 @@ function initScrollReveal() {
         ".features ul li",
         ".destination-cards .container-1340 h2",
         ".destination-cards ul li",
-        ".destination-cards .btn-secondary",
         ".feedback-section .section-header",
         ".testimonials-grid .testimonial-card",
         ".research .section-header",
         ".article-grid .article-card",
-        ".journal-cta",
         ".site-footer .footer-top-grid",
         ".site-footer .footer-links-grid",
         ".site-footer .footer-bottom-bar",
@@ -241,19 +239,6 @@ function initTopDestinationImageReveal() {
     cards.forEach((card) => observer.observe(card));
 }
 
-// Hero Scroll Cue Fadeout
-function initHeroScrollCue() {
-    const cue = document.getElementById("heroScrollCue");
-    if (!cue) return;
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 70) {
-            cue.classList.add("faded");
-        } else {
-            cue.classList.remove("faded");
-        }
-    }, { passive: true });
-}
-
 // Milestone Live Number Counters
 function initStatsCounter() {
     const counters = document.querySelectorAll(".counter[data-target]");
@@ -344,64 +329,76 @@ function initScrollSpy() {
     highlightNav();
 }
 
-// Dynamic Radial SVG Scroll "Back to Top" Widget
-function initRadialScrollWidget() {
-    let widget = document.getElementById("floatingScrollWidget");
-    if (!widget) {
-        widget = document.createElement("div");
-        widget.id = "floatingScrollWidget";
-        widget.className = "floating-scroll-widget";
-        widget.innerHTML = `
-            <svg class="progress-ring" width="54" height="54">
-                <circle class="progress-ring-bg" stroke="rgba(255,255,255,0.12)" stroke-width="3" fill="transparent" r="22" cx="27" cy="27"/>
-                <circle class="progress-ring-circle" stroke="#068686" stroke-width="3" fill="transparent" r="22" cx="27" cy="27"/>
-            </svg>
-            <button class="floating-top-btn" aria-label="Back to Top">
-                <i class='bx bx-up-arrow-alt'></i>
-            </button>
-        `;
-        document.body.appendChild(widget);
-    }
+// Parallax Effect for Destinations City & Nature Gallery
+function initCityNatureParallax() {
+    const gallerySection = document.querySelector(".four-column-image-section");
+    if (!gallerySection) return;
 
-    const circle = widget.querySelector(".progress-ring-circle");
-    const radius = circle.r.baseVal.value;
-    const circumference = 2 * Math.PI * radius;
-    circle.style.strokeDasharray = `${circumference} ${circumference}`;
-    circle.style.strokeDashoffset = circumference;
+    const galleryCards = gallerySection.querySelectorAll(".img-gallery li");
+    const galleryImages = gallerySection.querySelectorAll(".img-gallery .img-section img");
+    if (galleryImages.length === 0) return;
 
-    const topBtn = widget.querySelector(".floating-top-btn");
-    if (topBtn) {
-        topBtn.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+    let ticking = false;
+
+    function updateParallax() {
+        const rect = gallerySection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if gallery is entering or within viewport
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+            const normalized = (progress - 0.5) * 2; // Range -1 to 1
+
+            galleryImages.forEach((img, idx) => {
+                if (img.dataset.hovered === "true") return; // Respect mouse hover
+                // Stagger movement speeds based on index for true multi-plane 3D depth
+                const depthRates = [-20, 24, -16, 20, -22, 18, -26, 22];
+                const rate = depthRates[idx % depthRates.length];
+                const translateY = normalized * rate;
+                img.style.transform = `translateY(${translateY.toFixed(1)}px) scale(1.08)`;
+            });
+        }
+        ticking = false;
     }
 
     window.addEventListener("scroll", () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
-
-        const offset = circumference - scrollPercent * circumference;
-        circle.style.strokeDashoffset = offset;
-
-        if (scrollTop > 260) {
-            widget.classList.add("active");
-        } else {
-            widget.classList.remove("active");
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
         }
     }, { passive: true });
+
+    // Interactive mouse hover micro-tilt parallax on desktop
+    galleryCards.forEach((card) => {
+        const img = card.querySelector(".img-section img");
+        if (!img) return;
+
+        card.addEventListener("mousemove", (e) => {
+            img.dataset.hovered = "true";
+            const cardRect = card.getBoundingClientRect();
+            const x = (e.clientX - cardRect.left) / cardRect.width - 0.5;
+            const y = (e.clientY - cardRect.top) / cardRect.height - 0.5;
+            img.style.transform = `translate(${x * 14}px, ${y * 14}px) scale(1.14)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+            img.dataset.hovered = "false";
+            updateParallax();
+        });
+    });
+
+    updateParallax();
 }
 
 function initAll() {
     initScrollProgress();
     initScrollReveal();
     initTopDestinationImageReveal();
+    initCityNatureParallax();
     initFooterAccordion();
     initFlipCards();
-    initHeroScrollCue();
     initStatsCounter();
     initScrollSpy();
-    initRadialScrollWidget();
 }
 
 if (document.readyState === "loading") {
